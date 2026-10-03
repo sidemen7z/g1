@@ -33,7 +33,7 @@ h1{font-size:34px;margin:18px 0 4px;letter-spacing:-1px}
 <body>
 <nav class="topnav"><a href="index.html"><img src="assets/g1-logo.png" alt="G1"/></a>
 <a href="index.html">← Home</a><a href="index.html#quote">Get Estimate</a>
-<a class="gq" href="https://wa.me/919372741876" target="_blank">WhatsApp Sajjan</a></nav>
+<a class="gq" href="https://wa.me/919372741876" target="_blank">WhatsApp Mustaque Sajjan</a></nav>
 <div class="wrap">
 <h1>All G1 products & brochures</h1>
 <p style="color:var(--mut)">70+ real items from the G1 catalogue. Search, filter, WhatsApp price or open the brochure.</p>
@@ -70,7 +70,7 @@ h1{font-size:34px;margin:18px 0 4px;letter-spacing:-1px}
 <a href="brochures/BOLLARD AND GATE LIGHT.pdf" target="_blank">Bollard →</a>
 <a href="brochures/Swimming Pool LED Light.pdf" target="_blank">Underwater →</a></div></div>
 </div></div>
-<p style="text-align:center;color:var(--mut);font-size:13px;padding-bottom:30px">G1 Energy Solutions • Yerawada Pune • M.A. Sajjan 93727 41876</p>
+<p style="text-align:center;color:var(--mut);font-size:13px;padding-bottom:30px">G1 Energy Solutions • Yerawada Pune • Mustaque Sajjan 93727 41876</p>
 </div>
 <div class="chat"><a class="cbtn" href="https://wa.me/919372741876" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
 <script>
@@ -83,7 +83,7 @@ const M={'Solar Inverter PCU':'brochures/Brochure for Solar Inverters.pdf','Grid
 let cat=new URLSearchParams(location.search).get('cat')||'all';
 document.querySelectorAll('#tabs button').forEach(b=>{b.classList.toggle('on',b.dataset.c===cat);b.onclick=()=>{cat=b.dataset.c;document.querySelectorAll('#tabs button').forEach(x=>x.classList.toggle('on',x===b));draw()}});
 function draw(){const q=document.getElementById('q').value.toLowerCase();
-document.getElementById('pgrid').innerHTML=P.filter(p=>(cat==='all'||p.c===cat)&&p.t.toLowerCase().includes(q)).map(p=>{const b=M[p.t];return `<div class="p"><img loading="lazy" src="${p.img}" onerror="this.src='assets/IMG1.jpg'"/><div class="t"><b>${p.t}</b><div style="display:flex;gap:6px;margin-top:8px"><a href="https://wa.me/919372741876?text=${encodeURIComponent('Hi Sajjan, price for '+p.t)}" target="_blank" style="flex:1;text-align:center;background:#22b358;color:#fff;font-weight:800;font-size:12px;padding:8px;border-radius:8px">WhatsApp</a>${b?`<a href="${b}" target="_blank" style="flex:1;text-align:center;background:#111;color:#fff;font-size:12px;font-weight:800;padding:8px;border-radius:8px">Brochure</a>`:''}</div></div></div>`}).join('')||'<p>No match.</p>'}
+document.getElementById('pgrid').innerHTML=P.filter(p=>(cat==='all'||p.c===cat)&&p.t.toLowerCase().includes(q)).map(p=>{const b=M[p.t];return `<div class="p"><img loading="lazy" src="${p.img}" onerror="this.src='assets/IMG1.jpg'"/><div class="t"><b>${p.t}</b><div style="display:flex;gap:6px;margin-top:8px"><a href="https://wa.me/919372741876?text=${encodeURIComponent('Hi Mustaque Sajjan, price for '+p.t)}" target="_blank" style="flex:1;text-align:center;background:#22b358;color:#fff;font-weight:800;font-size:12px;padding:8px;border-radius:8px">WhatsApp</a>${b?`<a href="${b}" target="_blank" style="flex:1;text-align:center;background:#111;color:#fff;font-size:12px;font-weight:800;padding:8px;border-radius:8px">Brochure</a>`:''}</div></div></div>`}).join('')||'<p>No match.</p>'}
 draw();
 </script>
 </body>

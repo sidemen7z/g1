@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="theme-color" content="#0B3B24"/>
 <title>G1 Energy Solutions — Smart Solar Solutions for Homes & Businesses</title>
-<meta name="description" content="G1 Energy Pune — smart solar for homes & businesses. Free estimate. M.A. Sajjan 9372741876."/>
+<meta name="description" content="G1 Energy Pune — smart solar for homes & businesses. Free estimate. Mustaque Sajjan 9372741876."/>
 <link rel="icon" type="image/png" href="assets/g1-logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="preconnect" href="https://images.unsplash.com"/>
@@ -18,7 +18,11 @@ body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:#f6f8f7;co
 .wrap{max-width:1140px;margin:0 auto;padding:0 22px}img{max-width:100%}a{text-decoration:none;color:inherit}
 /* HERO exactly like screenshot — FULL WIDTH edge-to-edge */
 .hero{position:relative;margin:0;border-radius:0;overflow:hidden;min-height:88vh;display:flex;flex-direction:column}
-.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 65%}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 65%;opacity:0;transition:opacity 1.2s ease}
+.hero .bg.on{opacity:1}
+.hero .hdots{position:absolute;bottom:16px;left:0;right:0;z-index:5;display:flex;justify-content:center;gap:8px}
+.hero .hdots button{width:9px;height:9px;border-radius:50%;border:1px solid rgba(255,255,255,.8);background:transparent;cursor:pointer;padding:0}
+.hero .hdots button.on{background:#C9F24B;border-color:#C9F24B}
 .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,14,.28) 0%,rgba(10,20,14,0) 30%,rgba(10,20,14,.15) 55%,rgba(8,15,11,.72) 100%)}
 /* fully transparent glass nav — FULL WIDTH */
 .topnav{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;padding:10px 22px;border-radius:0;background:rgba(12,22,16,.55);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:0;border-bottom:1px solid rgba(255,255,255,.18);box-shadow:none}
@@ -120,7 +124,11 @@ footer{padding:18px 22px 90px;font-size:12.5px;color:#6b7d72;display:flex;justif
 
 <!-- HERO -->
 <div class="hero">
-<img class="bg" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1600&auto=format&fit=crop" fetchpriority="high" decoding="async" alt="Rooftop solar panels 4K" onerror="this.onerror=null;this.src='assets/IMG10.jpg'"/>
+<img class="bg on" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1600&auto=format&fit=crop" fetchpriority="high" decoding="async" alt="Solar farm" onerror="this.onerror=null;this.src='assets/IMG10.jpg'"/>
+<img class="bg" src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1600&auto=format&fit=crop" loading="lazy" decoding="async" alt="Solar and wind" onerror="this.onerror=null;this.src='assets/IMG5.jpg'"/>
+<img class="bg" src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1600&auto=format&fit=crop" loading="lazy" decoding="async" alt="Home with rooftop solar" onerror="this.onerror=null;this.src='assets/IMG6.jpg'"/>
+<img class="bg" src="assets/IMG10.jpg" loading="lazy" decoding="async" alt="G1 real installation"/>
+<div class="hdots" id="hdots"></div>
 <nav class="topnav" id="nav">
 <a href="#top"><img src="assets/g1-logo.png" alt="G1"/></a>
 <div class="links">
@@ -220,14 +228,14 @@ footer{padding:18px 22px 90px;font-size:12.5px;color:#6b7d72;display:flex;justif
 <p style="color:var(--mut);font-size:14.5px">Rugged UPS, Solar PCU, MPPT, stabilizers for defence & industry — same engineering on rooftops. Tata Motors, GAIL, Philips, Tata Institute…</p></div>
 
 <div class="cgrid" id="contact"><div class="cbox" id="quote" style="padding:16px">
-<h3 style="margin:0">Get your free estimate</h3><p style="font-size:13px;color:var(--mut)">To M.A. Sajjan on WhatsApp only.</p>
-<p style="font-size:13.5px"><b>G1 Energy, 204 BK Apt, Yerawada 411006</b><br/>020-26683974 • <b>93727 41876 (Sajjan)</b><br/>info@g1energysolutions.com</p>
+<h3 style="margin:0">Get your free estimate</h3><p style="font-size:13px;color:var(--mut)">To Mustaque Sajjan on WhatsApp only.</p>
+<p style="font-size:13.5px"><b>G1 Energy, 204 BK Apt, Yerawada 411006</b><br/>020-26683974 • <b>+91 93727 41876 (Mustaque Sajjan)</b><br/>info@g1energysolutions.com</p>
 <form onsubmit="return sendWA(event)"><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><input id="f1" required placeholder="Name *"/><input id="f2" required placeholder="Mobile *"/></div><input id="f5" placeholder="Bill + area"/><button class="btn btn-lime" style="width:100%;justify-content:center">Get My Estimate →</button></form>
 </div>
 <div class="cbox"><iframe src="https://www.google.com/maps?q=BK+Apartment,+Shadwal+Baba+Rd,+Yerawada,+Pune+411006&output=embed" loading="lazy"></iframe></div>
 </div>
 
-<footer><span>© 2026 G1 Energy Solutions • On-Grid Hybrid Off-Grid</span><span>Sajjan 93727 41876</span></footer>
+<footer><span>© 2026 G1 Energy Solutions • On-Grid Hybrid Off-Grid</span><span>Mustaque Sajjan • +91 93727 41876</span></footer>
 </div>
 </div>
 
@@ -238,6 +246,14 @@ footer{padding:18px 22px 90px;font-size:12.5px;color:#6b7d72;display:flex;justif
 
 <script>
 document.getElementById('menuBtn').onclick=()=>document.getElementById('nav').classList.toggle('open');
+/* hero slideshow — rotate every 5s, pause offscreen/reduced-motion */
+(function(){const imgs=document.querySelectorAll('.hero .bg'),box=document.getElementById('hdots');if(!imgs.length)return;
+imgs.forEach((_,i)=>{const d=document.createElement('button');d.setAttribute('aria-label','Slide '+(i+1));if(!i)d.classList.add('on');d.onclick=()=>show(i);box.appendChild(d)});
+let i=0,t=null;const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function show(n){i=(n+imgs.length)%imgs.length;imgs.forEach((s,k)=>s.classList.toggle('on',k===i));box.querySelectorAll('button').forEach((d,k)=>d.classList.toggle('on',k===i));restart()}
+function restart(){if(t)clearInterval(t);if(!reduce)t=setInterval(()=>{if(!document.hidden)show(i+1)},5000)}
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&t)clearInterval(t);else restart()});
+restart();})();
 /* clients marquee — all 35 source-code logos + partners, right to left */
 (function(){const t=document.getElementById('ctrack');if(!t)return;let h='';
 const extra=['assets/sma-logo.jpg','assets/prograssiv-logo.jpg','assets/twincity-logo.jpg'];
@@ -257,7 +273,7 @@ const P=[
 {c:'light',img:'assets/led_bulb.jpg',t:'LED Bulb'},
 ];
 function draw(){const M={'Solar Panel 540W+':'brochures/technical_specification.pdf','Solar Inverter PCU':'brochures/Brochure for Solar Inverters.pdf','Solar AC Pump':'brochures/Solar Water Pump.pdf','Solar Street Light':'brochures/TECHNICAL SPECIFICATION OF SOLAR STREET LIGHTING SYSTEMS.pdf','Industrial UPS':'brochures/Technical Specs for True Online UPS Systems.pdf','Servo Stabilizer':'brochures/Servo Stabilizer.pdf'};
-document.getElementById('pgrid').innerHTML=P.map(p=>{const b=M[p.t];return `<div class="p"><img loading="lazy" src="${p.img}" alt="${p.t}" onerror="this.onerror=null;this.src='assets/IMG1.jpg'"/><div class="t"><b>${p.t}</b><br/><div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><a href="https://wa.me/919372741876?text=${encodeURIComponent('Hi Sajjan, price for '+p.t+'?')}" target="_blank" style="flex:1;text-align:center;background:#22b358;color:#fff;font-weight:800;font-size:12px;padding:8px;border-radius:8px">WhatsApp</a>${b?`<a href="${b}" target="_blank" style="flex:1;text-align:center;background:#111;color:#fff;font-weight:800;font-size:12px;padding:8px;border-radius:8px">📄 Brochure</a>`:''}</div></div></div>`}).join('')}
+document.getElementById('pgrid').innerHTML=P.map(p=>{const b=M[p.t];return `<div class="p"><img loading="lazy" src="${p.img}" alt="${p.t}" onerror="this.onerror=null;this.src='assets/IMG1.jpg'"/><div class="t"><b>${p.t}</b><br/><div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><a href="https://wa.me/919372741876?text=${encodeURIComponent('Hi Mustaque Sajjan, price for '+p.t+'?')}" target="_blank" style="flex:1;text-align:center;background:#22b358;color:#fff;font-weight:800;font-size:12px;padding:8px;border-radius:8px">WhatsApp</a>${b?`<a href="${b}" target="_blank" style="flex:1;text-align:center;background:#111;color:#fff;font-weight:800;font-size:12px;padding:8px;border-radius:8px">📄 Brochure</a>`:''}</div></div></div>`}).join('')}
 draw();
 const bE=document.getElementById('bill'),rE=document.getElementById('roof');
 bE.oninput=calc;rE.oninput=calc;
@@ -268,7 +284,7 @@ const gen=Math.round(kw*135),m=Math.min(gen*8.6,b*.9),a=m*12;
 document.getElementById('oKW').textContent=kw.toFixed(1)+' kW';document.getElementById('oS').textContent=L(a);document.getElementById('oM').textContent=L(m);document.getElementById('oP').textContent=(Math.max(kw*68000-(kw>=3?78000:kw>=2?60000:30000),kw*35000)/(m*12)).toFixed(1)+' yrs';
 document.getElementById('oN').textContent=`~${gen} units/mo • subsidy adjusted.`}
 calc();
-function sendWA(e){e.preventDefault();window.open('https://wa.me/919372741876?text='+encodeURIComponent(`Hi Sajjan, I'm ${document.getElementById('f1').value} (${document.getElementById('f2').value}). Estimate please. System ${document.getElementById('oKW').textContent}.`),'_blank');return false}
+function sendWA(e){e.preventDefault();window.open('https://wa.me/919372741876?text='+encodeURIComponent(`Hi Mustaque Sajjan, I'm ${document.getElementById('f1').value} (${document.getElementById('f2').value}). Estimate please. System ${document.getElementById('oKW').textContent}.`),'_blank');return false}
 </script>
 </body>
 </html>
