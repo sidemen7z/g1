@@ -1,0 +1,25 @@
+# G1 Energy Solutions — static deploy (publish = this folder)
+[build]
+  publish = "."
+  command = ""
+
+# Pretty URLs: /products instead of /products.html
+[[redirects]]
+  from = "/products"
+  to = "/products.html"
+  status = 200
+
+# Long cache for images & brochures, short for HTML
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/brochures/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    X-Content-Type-Options = "nosniff"
