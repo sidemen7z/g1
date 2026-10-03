@@ -83,8 +83,8 @@ input[type=range]{width:100%;max-width:100%;accent-color:var(--lime)}
 .shop{background:rgba(255,255,255,.65);backdrop-filter:blur(10px);border:1px solid rgba(16,23,20,.09);border-radius:20px;padding:20px;margin-top:14px}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
 .p{background:#fff;border:1px solid rgba(16,23,20,.09);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-.p img{height:150px;width:100%;object-fit:contain;object-position:center;background:#fff;padding:10px}
-.p .t{padding:10px 12px;font-size:13.5px;border-top:1px solid rgba(16,23,20,.07)}
+.p img{height:170px;width:100%;object-fit:contain;object-position:center;background:#fff;padding:10px}
+.p img{transition:transform .35s ease}.p:hover img{transform:scale(1.06)}.p .t{padding:10px 12px;font-size:13.5px;border-top:1px solid rgba(16,23,20,.07)}
 .band{background:rgba(11,59,36,.96);color:#fff;border-radius:22px;margin-top:14px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
 .t{background:rgba(255,255,255,.7);border:1px solid rgba(16,23,20,.09);border-radius:16px;padding:18px}
@@ -263,14 +263,14 @@ t.innerHTML=h+h;})();
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const P=[
-{c:'solar',img:'assets/panel1.png',t:'Solar Panel 540W+'},
-{c:'solar',img:'assets/d-solarinveter.jpg',t:'Solar Inverter PCU'},
-{c:'solar',img:'assets/solar_pump.jpg',t:'Solar AC Pump'},
-{c:'solar',img:'assets/Solar_Street_Light.jpg',t:'Solar Street Light'},
-{c:'power',img:'assets/ups_system.jpg',t:'Industrial UPS'},
-{c:'power',img:'assets/voltage_stablizer.jpg',t:'Servo Stabilizer'},
-{c:'light',img:'assets/Led-Street-Light.jpg',t:'LED Street Light'},
-{c:'light',img:'assets/led_bulb.jpg',t:'LED Bulb'},
+{c:'solar',img:'assets/new/panel1.png',t:'Solar Panel 540W+'},
+{c:'solar',img:'assets/new/d-solarinveter.jpg',t:'Solar Inverter PCU'},
+{c:'solar',img:'assets/new/solar_pump.jpg',t:'Solar AC Pump'},
+{c:'solar',img:'assets/new/solar_street_light.jpg',t:'Solar Street Light'},
+{c:'power',img:'assets/new/ups_system.jpg',t:'Industrial UPS'},
+{c:'power',img:'assets/new/voltage_stablizer.jpg',t:'Servo Stabilizer'},
+{c:'light',img:'assets/new/led-street-light.jpg',t:'LED Street Light'},
+{c:'light',img:'assets/new/led_bulb.jpg',t:'LED Bulb'},
 ];
 function draw(){const M={'Solar Panel 540W+':'brochures/technical_specification.pdf','Solar Inverter PCU':'brochures/Brochure for Solar Inverters.pdf','Solar AC Pump':'brochures/Solar Water Pump.pdf','Solar Street Light':'brochures/TECHNICAL SPECIFICATION OF SOLAR STREET LIGHTING SYSTEMS.pdf','Industrial UPS':'brochures/Technical Specs for True Online UPS Systems.pdf','Servo Stabilizer':'brochures/Servo Stabilizer.pdf'};
 document.getElementById('pgrid').innerHTML=P.map(p=>{const b=M[p.t];return `<div class="p"><img loading="lazy" src="${p.img}" alt="${p.t}" onerror="this.onerror=null;this.src='assets/IMG1.jpg'"/><div class="t"><b>${p.t}</b><br/><div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><a href="https://wa.me/919372741876?text=${encodeURIComponent('Hi Mustaque Sajjan, price for '+p.t+'?')}" target="_blank" style="flex:1;text-align:center;background:#22b358;color:#fff;font-weight:800;font-size:12px;padding:8px;border-radius:8px">WhatsApp</a>${b?`<a href="${b}" target="_blank" style="flex:1;text-align:center;background:#111;color:#fff;font-weight:800;font-size:12px;padding:8px;border-radius:8px">📄 Brochure</a>`:''}</div></div></div>`}).join('')}
